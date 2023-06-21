@@ -45,3 +45,4 @@ resources
 .gradle
 build
 gradle
+.idea
