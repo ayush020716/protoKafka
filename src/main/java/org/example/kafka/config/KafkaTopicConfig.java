@@ -1,4 +1,4 @@
-package org.example.kafka.configs;
+package org.example.kafka.config;
 
 import org.apache.kafka.clients.admin.AdminClientConfig;
 import org.apache.kafka.clients.admin.NewTopic;
