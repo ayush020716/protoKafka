@@ -1,4 +1,4 @@
-package org.example.kafka.service;
+package org.example.service;
 
 import org.apache.kafka.clients.admin.NewTopic;
 import org.springframework.kafka.core.KafkaTemplate;
@@ -17,6 +17,7 @@ public class KafkaPublisherService {
     }
 
     public void sendMessage(String message) {
+        // kafkaTemplate.send(topicName.name(), message);
         ListenableFuture<SendResult<String, String>> future = kafkaTemplate.send(topicName.name(), message);
         future.addCallback(result -> {
             assert result != null;
